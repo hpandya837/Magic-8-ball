@@ -12,6 +12,11 @@ function shakeMagic8Ball() {
         return
     }
 
+    let start = '';
+    if (!start) {
+        document.getElementById('shakingBacon').classList.add('shaking');
+    }
+
     const randomNumber = Math.floor(Math.random() * 8);
     let answer, image, color;
 
