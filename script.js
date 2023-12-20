@@ -4,7 +4,7 @@ function shakeMagic8Ball() {
     if (question === null) {
         document.getElementById('response-text').innerText = 'Please ask a question!'
         document.getElementById('response-text').classList = 'text-danger'
-        document.getElementById('response-image').src = '#BAD/BROKENIMAGE' // FIX THIS
+        document.getElementById('response-image').src = 'fail.jpg' // FIX THIS
         return
     }
 
@@ -24,42 +24,42 @@ function shakeMagic8Ball() {
         switch (randomNumber) {
             case 0:
                 answer = "Yes";
-                image = "yes-image.jpg";
+                image = "Yes-Person.jpg";
                 color = "text-success";
                 break;
             case 1:
                 answer = "No";
-                image = "no-image.jpg";
+                image = "no-feat2.jpg";
                 color = "text-danger";
                 break;
             case 2:
                 answer = "Ask again later";
-                image = "later-image.jpg";
+                image = "tryagain.png";
                 color = "text-secondary";
                 break;
             case 3:
                 answer = "Maybe";
-                image = "maybe-image.jpg";
+                image = "maybe.jpg";
                 color = "text-warning";
                 break;
             case 4:
                 answer = "Cannot predict now";
-                image = "cannot-predict-image.jpg";
+                image = "tryagain.png";
                 color = "text-muted";
                 break;
             case 5:
                 answer = "Don't count on it";
-                image = "dont-count-on-it-image.jpg";
+                image = "no-feat2.jpg";
                 color = "text-danger";
                 break;
             case 6:
                 answer = "Most likely";
-                image = "most-likely-image.jpg";
+                image = "Yes-Person.jpg";
                 color = "text-success";
                 break;
             case 7:
                 answer = "Outlook not so good";
-                image = "outlook-not-good-image.jpg";
+                image = "tryagain.png";
                 color = "text-danger";
                 break;
             default:
